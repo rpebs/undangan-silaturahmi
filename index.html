@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Silaturahmi Keluarga Besar Bani Sama'un</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #a8d5ba 0%, #468259 100%);
+    color: #2e3e28;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 700px;
+    background: #f6f9f3;
+    border-radius: 24px;
+    padding: 3rem 3.5rem 4rem 3.5rem;
+    box-shadow: 
+      0 20px 35px rgba(46, 62, 40, 0.25),
+      0 10px 20px rgba(70, 130, 89, 0.15);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    margin: auto;
+  }
+
+  h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #3b6a3b;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  h1 .accent {
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, #7aba73, #3b6a3b);
+    border-radius: 3px;
+    margin: 0.5rem auto 1.5rem;
+  }
+
+  p.intro {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    font-style: normal;
+    color: #44663d;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .details {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #3c5234;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .details strong {
+    font-weight: 700;
+    color: #558b49;
+  }
+
+  .location {
+    background: #e7f0e7;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    color: #3a5a3a;
+    box-shadow:
+      0 8px 18px rgba(70, 130, 89, 0.3);
+    transition: box-shadow 0.3s ease, opacity 0.8s ease, transform 0.8s ease;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .location:hover {
+    box-shadow:
+      0 12px 28px rgba(67, 109, 67, 0.5);
+  }
+
+  .location h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .location p {
+    margin: 0.35rem 0;
+    font-weight: 600;
+  }
+
+  footer {
+    margin-top: 4rem;
+    font-size: 0.95rem;
+    color: #aac9a6;
+    font-style: italic;
+    user-select: none;
+  }
+
+  /* Responsive improvements */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    p.intro {
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .details {
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .location h2 {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 1rem;
+    }
+
+    .container {
+      padding: 2rem 1.75rem 3rem 1.75rem;
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    h1 .accent {
+      width: 90px;
+      height: 2.5px;
+      margin: 0.4rem auto 1.2rem;
+    }
+
+    p.intro {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+
+    .details {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .location {
+      padding: 1.5rem 2rem;
+      border-radius: 14px;
+    }
+
+    .location h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .location p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      margin-top: 3rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="page-title">
+    <h1 id="page-title">
+      Silaturahmi Keluarga Besar Bani Sama'un
+      <span class="accent"></span>
+    </h1>
+    
+    <p class="intro" tabindex="0">
+      Assalamu’alaikum Warahmatullahi Wabarakatuh,<br />
+      Dengan penuh rasa hormat dan kebahagiaan, kami mengundang seluruh keluarga besar Bani Sama'un untuk hadir dalam acara silaturahmi keluarga guna mempererat tali persaudaraan dan memperkuat ukhuwah. Kehadiran Bapak/Ibu/Saudara(i) sangat kami harapkan.
+    </p>
+    <section class="details" aria-label="Detail acara silaturahmi" tabindex="0">
+      <p><strong>Hari, Tanggal:</strong> Minggu, 20 Agustus 2024</p>
+      <p><strong>Waktu:</strong> 10.00 WIB - Selesai</p>
+    </section>
+    <section class="location" aria-label="Lokasi acara silaturahmi" tabindex="0">
+      <h2>Lokasi Acara</h2>
+      <p>Gedung Serbaguna Bani Sama'un</p>
+      <p>Jl. Merpati No.45, Desa Sukamaju, Kecamatan Sukatani, Kabupaten Sukamaju</p>
+      <p>Provinsi Jawa Barat, Indonesia</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 Keluarga Besar Bani Sama'un. Semua hak cipta dilindungi.
+  </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.container');
+    const intro = document.querySelector('p.intro');
+    const details = document.querySelector('.details');
+    const locationSection = document.querySelector('.location');
+
+    // Animate main container appearance
+    container.style.opacity = '1';
+    container.style.transform = 'translateY(0)';
+
+    // Animate intro after container animation
+    setTimeout(() => {
+      intro.style.opacity = '1';
+      intro.style.transform = 'translateY(0)';
+    }, 400);
+
+    // Animate details after intro
+    setTimeout(() => {
+      details.style.opacity = '1';
+      details.style.transform = 'translateY(0)';
+    }, 750);
+
+    // Animate location after details
+    setTimeout(() => {
+      locationSection.style.opacity = '1';
+      locationSection.style.transform = 'translateY(0)';
+    }, 1100);
+
+    // Scroll fade-in for any future added sections (optional)
+    // For now, only location below viewport if small screen, so safe without it.
+  });
+</script>
+</body>
+</html>
